@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://peopel-su.github.io/ist263/lab11/lab11.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 11</title>
+    <link rel="stylesheet" href="https://peopel-su.github.io/ist263/images/animate2.css">
+    <style>
+        .container {
+            display: flex;
+        }
+        #first {order: 1;}
+        #second {order: 2;}
+        #third {order: 3;}
+    </style>
+    <script>
+        function WinnerMessage () {
+            document.getElementById("messages").innerHTML = 'You Won!';
+        }
+
+        function TryAgain () {
+            document.getElementById("messages").innerHTML = 'Wrong Shell - Try Again';
+        }
+
+        function ShuffleShells() {
+            document.getElementById("first").style.order = Math.floor((Math.random() * 3) + 2);
+        }
+    
+    </script>
+</head>
+<body onload="ShuffleShells();">
+    <h1>Choose a Walnut</h1>
+    <div class="container">
+        <img src="./Lab 11_files/walnut.png" id="first" alt="first walnut" class="first" onclick="WinnerMessage();">
+        <img src="./Lab 11_files/walnut.png" id="second" alt="second walnut" class="second" onclick="TryAgain();">
+        <img src="./Lab 11_files/walnut.png" id="third" alt="third walnut" class="third" onclick="TryAgain();">
+    </div>
+    <div id="messages"></div>
+
+
+</body></html>
