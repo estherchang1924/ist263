@@ -1,0 +1,73 @@
+body {
+    background-color: rgb(131, 185, 252);
+    margin: 20px;
+    font-family:monospace;
+    font-size:large
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.logonav {
+    display: flex;
+    align-items: center;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    gap: 3rem; 
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(12, 49, 150);
+    font-weight: bold;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro img {
+    width: 70%;
+}
+
+img {
+    width: 40%;
+}
+
+.rightcontent {
+    display: flex;
+    margin: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.leftcontent {
+    display: flex;
+    margin: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.center {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.text {
+    margin: 1.5rem;
+}
+
