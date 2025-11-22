@@ -1,0 +1,73 @@
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+body {
+    background-color: #ffd6f7;
+    color: #000000;
+}
+
+a {
+    color: #8400ff;
+}
+
+h1 {
+    color: #1443FF;
+}
+
+nav {
+    background-color: #e3c3ff;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #001666;
+}
+
+nav a:hover {
+    background-color: #e3ffe1;
+}
+
+.firstrow {
+    display: flex;
+}
+
+.skillstable {
+    flex: 1;
+}
+
+.skillstable table{
+    margin: 0 auto;
+}
+
+.skillsimage {
+    text-align: center;
+    flex: 2;
+}
+
+.picofme {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 768px){
+    nav a {
+        font-size: 100%;
+        display: block
+    }
+
+    nav span {
+        display: none;
+    }
+}
