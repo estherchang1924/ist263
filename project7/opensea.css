@@ -1,0 +1,50 @@
+body {
+    text-align: center;
+    background-color: rgb(131, 185, 252);
+    margin: 20px;
+    font-family: Inter;
+}
+
+img {
+    width: 50%;
+}
+
+footer {
+    text-align: left;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.logonav {
+    display: flex;
+    align-items: center;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    gap: 3rem; 
+    margin-left: 2rem;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(12, 49, 150);
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 3rem;
+}
+
+img {
+    margin-bottom: 1rem;
+}
