@@ -75,3 +75,40 @@ img {
     margin: 1.5rem;
 }
 
+.pointer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 2rem;
+    aspect-ratio: 1;
+    background-image: url('../project/images/cutefish.png');
+    pointer-events: none;
+
+    /*transform: translate3d(var(--mouseX, 0), var(--mouseY, 0), 0); */
+    transform: translate3d(var(--mouse-x, 0), var(--mouse-y, 0), 0) translate(-50%, -50%);
+
+    transition: 0.3s ease-out;
+    transition-property: transform, width, border, background-color;
+}
+
+.btn:hover ~ .pointer {
+    width: 5rem;
+    background-color: transparent;
+    border-color: black;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    .pointer,
+    #coordinates {
+        display: none;
+    }
+}
+
+@media (pointer: coarse) {
+    .pointer,
+    #coordinates {
+        display: none;
+    }
+}
