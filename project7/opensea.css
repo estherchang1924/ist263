@@ -7,6 +7,7 @@ body {
 
 img {
     width: 50%;
+    margin-bottom: 1rem;
 }
 
 footer {
@@ -45,6 +46,41 @@ p {
     margin-bottom: 3rem;
 }
 
-img {
-    margin-bottom: 1rem;
+.pointer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 4rem;
+    aspect-ratio: 1;
+    background-image: url('../project/images/fishy.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+
+    /*transform: translate3d(var(--mouseX, 0), var(--mouseY, 0), 0); */
+    transform: translate3d(var(--mouse-x, 0), var(--mouse-y, 0), 0) translate(-50%, -50%);
+
+    transition: 0.4s ease-out;
+    transition-property: transform, width, border, background-color;
+}
+
+.btn:hover ~ .pointer {
+    width: 5rem;
+    background-color: transparent;
+    border-color: black;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .pointer,
+    #coordinates {
+        display: none;
+    }
+}
+
+@media (pointer: coarse) {
+    .pointer,
+    #coordinates {
+        display: none;
+    }
 }
